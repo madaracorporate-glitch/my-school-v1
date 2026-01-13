@@ -25,12 +25,8 @@
     <nav class="fixed w-full z-50 transition-all duration-300 border-b bg-[#050505]/90 backdrop-blur-md border-neutral-800 py-3">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
         <div class="flex items-center gap-3">
-          <div class="w-10 h-10 bg-blue-600 flex items-center justify-center transform -skew-x-12 shadow-[0_0_20px_rgba(37,99,235,0.6)]">
-            <span class="font-black text-white text-xl transform skew-x-12">MY</span>
-          </div>
-          <div class="flex flex-col leading-none">
-            <span class="text-xl font-black tracking-tighter uppercase text-white">My School</span>
-            <span class="text-[10px] font-bold tracking-[0.2em] text-blue-500 uppercase">Formation</span>
+          <div class="bg-white rounded-xl p-2 border border-neutral-200 shadow-[0_10px_30px_rgba(0,0,0,0.25)]">
+            <img src="./assets/6894d48733b3b5c53744a6c8_logo-test-1.png" alt="My School" class="h-10 w-auto object-contain" loading="lazy">
           </div>
         </div>
         <div class="hidden md:flex items-center space-x-10">
@@ -145,10 +141,9 @@
     <footer class="bg-[#050505] border-t border-neutral-900 pt-16 pb-8">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center">
         <div class="flex items-center gap-2 mb-6">
-          <div class="w-8 h-8 bg-blue-600 transform -skew-x-12 flex items-center justify-center">
-            <span class="font-bold text-white text-xs transform skew-x-12">MS</span>
+          <div class="bg-white rounded-xl p-2 border border-neutral-200 shadow-[0_10px_30px_rgba(0,0,0,0.25)]">
+            <img src="./assets/6894d48733b3b5c53744a6c8_logo-test-1.png" alt="My School" class="h-10 w-auto object-contain" loading="lazy">
           </div>
-          <span class="font-black text-2xl uppercase italic tracking-tighter text-white">My School</span>
         </div>
         <div class="flex gap-6 mb-8">
           <i class="fa-brands fa-instagram w-6 h-6 text-neutral-500 hover:text-white cursor-pointer transition-colors"></i>
@@ -162,14 +157,36 @@
 
   <script>
     const TEAM = [
-      { name: "Madara", role: "Expert Algo & Réseaux Sociaux", image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=400" },
-      { name: "Kader", role: "Expert Création de Contenu", image: "https://images.unsplash.com/photo-1531384441138-2736e62e0919?auto=format&fit=crop&q=80&w=400" },
-      { name: "Merouan", role: "Intelligence Artificielle", image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=400" },
-      { name: "Guillaume", role: "Écriture & Concept", image: "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?auto=format&fit=crop&q=80&w=400" },
-      { name: "Kaza", role: "Prod. Spectacle & Scénario", image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=400" },
-      { name: "Aurélie Lloyd", role: "Performance Artistique", image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=400" },
-      { name: "Dylan", role: "Stylisme & Image", image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=400" },
-      { name: "Aniss", role: "Stratégie Digitale", image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=400" },
+      {
+        name: "MADARA",
+        role: "Stratégies digitales & psychologie des réseaux",
+        bio: "Fondateur Madara Community. Analyses algorithmiques, storytelling viral, automatisations. Croissance 100% organique, pas de pub.",
+        image: "./assets/6894d48733b3b5c53744a7c2_MADARA.png"
+      },
+      {
+        name: "Aurélie LLOYD-TALBI",
+        role: "Brand content, coaching & networking",
+        bio: "18+ ans (Publicis, Canal+, Studio Bagel), fondatrice JUDE. Stratégie, pitch, collaborations digitales, approche humaine et authentique.",
+        image: "./assets/6894d48733b3b5c53744a7ab_Aurélie LLOYD-TALBI .jpg"
+      },
+      {
+        name: "Andreas (Kamera Kastros)",
+        role: "Divertissement & storytelling vidéo",
+        bio: "Ex-journaliste/animateur (Les Anges, Secret Story, TPMP, NRJ12). Référence réseaux avec vidéos créatives et humour.",
+        image: "./assets/6894d48733b3b5c53744a7fe_andreas-kastrinos-kamera-kastros-attending-studios-keral-550nw-13393833br.jpg"
+      },
+      {
+        name: "Kader DIABY",
+        role: "Humour & création de contenu",
+        bio: "Créateur et influenceur (humour, parodies). Énergie virale, collaborations marques & créateurs, figure montante de l’humour en ligne.",
+        image: "./assets/6894d48733b3b5c53744a829_kader diaby.jpeg"
+      },
+      {
+        name: "Merouan BOUREGBA (L$30)",
+        role: "Production musicale & IA",
+        bio: "Beatmaker/producer (Nekfeu, Alpha Wann, Dosseh...). Intègre l’IA dans la création, fusion techno/rap, signature sur le rap FR.",
+        image: "./assets/6894d48733b3b5c53744a821_Merouan Bouregba.jpeg"
+      }
     ];
 
     const COURSES_LIST = [
@@ -201,7 +218,8 @@
         <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-90"></div>
         <div class="absolute bottom-0 left-0 right-0 p-4">
           <h3 class="text-xl font-black uppercase italic text-white">${member.name}</h3>
-          <p class="text-blue-400 text-xs font-bold uppercase tracking-widest">${member.role}</p>
+          <p class="text-blue-400 text-[11px] font-bold uppercase tracking-widest">${member.role}</p>
+          <p class="text-neutral-200 text-xs mt-1 leading-snug">${member.bio || ''}</p>
         </div>
       `;
       squadContainer.appendChild(card);
@@ -215,7 +233,7 @@
       card.innerHTML = `
         <div class="w-12 h-12 rounded-full bg-blue-600/10 border border-blue-600 flex items-center justify-center mb-4">
           <i class="${course.icon} text-blue-400"></i>
-        </div>
+                </div>
         <h3 class="text-xl font-black uppercase italic text-white mb-2">${course.title}</h3>
         <p class="text-neutral-400 text-sm">${course.desc}</p>
       `;
@@ -232,7 +250,7 @@
           <div class="flex items-center gap-3 mb-2">
             <span class="px-3 py-1 bg-blue-600 text-white text-xs font-bold rounded-full">${step.week}</span>
             <span class="text-sm font-black uppercase tracking-widest">${step.title}</span>
-          </div>
+              </div>
           <p class="text-neutral-400 text-sm">${step.desc}</p>
         </div>
       `;
